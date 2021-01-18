@@ -259,9 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				A981498B1FB6B566005F00B4 /* MoltenVKShaderConverter */,
-				A98149911FB6B566005F00B4 /* libMoltenVKSPIRVToMSLConverter.a */,
-				A9FC5F5D249D2547003CB086 /* libMoltenVKSPIRVToMSLConverter.a */,
-				A98149931FB6B566005F00B4 /* libMoltenVKSPIRVToMSLConverter.a */,
+				A98149911FB6B566005F00B4 /* libMoltenVKShaderConverter.a */,
+				A9FC5F5D249D2547003CB086 /* libMoltenVKShaderConverter.a */,
+				A98149931FB6B566005F00B4 /* libMoltenVKShaderConverter.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,21 +348,21 @@
 			remoteRef = A981498A1FB6B566005F00B4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A98149911FB6B566005F00B4 /* libMoltenVKSPIRVToMSLConverter.a */ = {
+		A98149911FB6B566005F00B4 /* libMoltenVKShaderConverter.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libMoltenVKShaderConverter.a;
 			remoteRef = A98149901FB6B566005F00B4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A98149931FB6B566005F00B4 /* libMoltenVKSPIRVToMSLConverter.a */ = {
+		A98149931FB6B566005F00B4 /* libMoltenVKShaderConverter.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libMoltenVKShaderConverter.a;
 			remoteRef = A98149921FB6B566005F00B4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A9FC5F5D249D2547003CB086 /* libMoltenVKSPIRVToMSLConverter.a */ = {
+		A9FC5F5D249D2547003CB086 /* libMoltenVKShaderConverter.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libMoltenVKShaderConverter.a;
@@ -504,12 +504,22 @@
 		A90B2B211A9B6170008EE819 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+					arm64e,
+				);
 			};
 			name = Debug;
 		};
 		A90B2B221A9B6170008EE819 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+					arm64e,
+				);
 			};
 			name = Release;
 		};
@@ -544,6 +554,10 @@
 		A9AD70142440ED3B00B9E254 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64e,
+					"$(ARCHS_STANDARD)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -551,6 +565,10 @@
 		A9AD70152440ED3B00B9E254 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64e,
+					"$(ARCHS_STANDARD)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
