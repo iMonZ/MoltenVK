@@ -1526,6 +1526,10 @@
 		A9CBEDFF1B6299D800E45FDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64e,
+					"$(ARCHS_STANDARD_64_BIT)",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1533,6 +1537,10 @@
 		A9CBEE001B6299D800E45FDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64e,
+					"$(ARCHS_STANDARD_64_BIT)",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1541,7 +1549,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = (
+					arm64e,
+					"$(ARCHS_STANDARD_64_BIT)",
+				);
 				BITCODE_GENERATION_MODE = marker;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1610,7 +1621,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = (
+					arm64e,
+					"$(ARCHS_STANDARD_64_BIT)",
+				);
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
